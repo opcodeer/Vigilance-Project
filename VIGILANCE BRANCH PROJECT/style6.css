@@ -116,6 +116,12 @@
     .logo img{
         margin-right: 23vw;
     }
+    .text-big a{
+        font-size: 1.8rem;
+    }
+    .text-small{
+        font-size: 1.2rem;
+    }
 }
 @media only screen and (max-width:550px){
     .logo img{
@@ -127,6 +133,10 @@
     }
     .text-big a{
         margin-left: 25px;
+        font-size: 1.7rem;
+    }
+    .text-small{
+        font-size: 1.15rem;
     }
 }
 @media only screen and (max-width:520px){
@@ -138,6 +148,9 @@
     }
     .table-main{
         margin: 70px;
+    }
+    .text-big a{
+        margin-left: 8px;
     }
 }
 @media only screen and (max-width:490px){
@@ -167,6 +180,9 @@
     ul li{
         padding: 5px 0px;
     }
+    .logo img{
+        margin-right: 10vw;
+    }
 }
 
 
@@ -178,8 +194,8 @@
     margin-right: 7vw;
    }
    .text-big a{
-    font-size: 1.2rem;
-    margin-left: 10px;
+    font-size: 1.12rem;
+    margin-left: -20px;
    }
 }
 @media only screen and (max-width:300px){
@@ -187,6 +203,9 @@
         margin-right: 2vw;
     }
     .text-big a{
-        margin-left: -13px;
+        font-size: 1.05rem;
+    }
+    .text-small{
+        font-size: 0.8rem;
     }
 }

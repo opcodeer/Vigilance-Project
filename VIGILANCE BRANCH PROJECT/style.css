@@ -36,9 +36,18 @@
    background-clip: text;
   animation: animate 10s linear infinite;
 }
+/* .content{
+    background-color: black;
+} */
 .text{
-  margin: 10px;
-  font-size: 30px;
+  font-size: 3.0rem;
+  text-align: center;
+  background: linear-gradient(90deg,orangered,orange);
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+   background-clip: text;
+  animation: animate 10s linear infinite;
 }
 .text a{
     cursor: auto;
@@ -63,6 +72,7 @@
   height: 7px;
   border-radius: 50px;
   background: white;
+  box-shadow: 0 0 5px white;
   width: 35px;
   margin-top: 4px;
   transition: all 0.4s ease;
@@ -82,6 +92,7 @@ ul li a{
     font-size: 1.6rem;
     color: white;
     border: 1px solid white;
+    box-shadow: 0 0 10px white;
     border-radius: 5px;
     padding: 2px;
     font-weight: bold;
@@ -91,20 +102,26 @@ ul li a:hover{
 }
 .buttons{
     display: flex;
-    justify-content: right;
-    margin: 50px;
+    justify-content: space-evenly;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    background: orange;
+    box-shadow: 0 0 25px black;
 }
 .btn{
-    padding: 16px;
-    margin-left: 60px;
+    padding: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.3rem;
+    font-size: 2.0rem;
     color: white;
     background: #12192c;
-    border: 2px solid aqua;
-    animation: blink 1.7s ease-in-out infinite alternate;
+    border: 3px solid gold;
+    box-shadow: 0 0 0 25px orangered;
+    /* animation: blink 1.7s ease-in-out infinite alternate;*/
     border-radius: 20px;
     cursor: pointer;
+}
+.btn:hover{
+    background:rgb(2, 2, 101);
 }
 .navtext{
     opacity: 0;
@@ -137,6 +154,32 @@ ul li a:hover{
     width: 100%;
     transition: all 0.4s ease-in-out;
 }
+.contact{
+    background-color: #3e4c21;
+    height: 20vh;
+    text-align: center;
+    box-shadow: 0 0 25px #ffff00;
+}
+.textcenter{
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+.textcenter a{
+    text-decoration: none;
+    font-family: kalnia;
+    color: beige;
+    cursor: auto;
+}
+.textcenter a:hover{
+    text-decoration: revert;
+}
+.textcontact{
+  color: white;
+  box-shadow: 0 0 25px #000;
+}
+.margin{
+    margin-bottom: 28px;
+}
 @keyframes animate{
     0%{
         background-position: 0%;
@@ -145,7 +188,7 @@ ul li a:hover{
         background-position: 400%;
     }
 }
-@keyframes blink{
+/* @keyframes blink{
     0%{
         opacity: 1;
         background-color: black;
@@ -158,7 +201,7 @@ ul li a:hover{
         opacity: 1;
         background-color: darkblue;
     }
-}
+} */
 @media only screen and (max-width:1695px){
     .branch{
          font-size: 2.7rem;
@@ -166,11 +209,16 @@ ul li a:hover{
     ul li{
         padding: 5px 58px;
     }
-
+    .text{
+        font-size: 2.5rem;
+    }
 }
 @media only screen and (max-width:1390px){
     ul li{
         padding: 5px 40px;
+    }
+    .text{
+        font-size: 2.3rem;
     }
 }
 /* from 1190px hamburger on */
@@ -233,10 +281,26 @@ ul li a:hover{
        .branch{
         font-size: 2.18rem;
    }
+      .btn{
+        padding: 15px;
+        font-size: 1.7rem;
+      }
+      .text{
+        font-size: 2.2rem;
+    }
 }
 @media only screen and (max-width:890px){
     .branch{
         font-size: 1.6rem;
+    }
+    .textcenter{
+        font-size: 2.3rem;
+    }
+    .btn{
+        box-shadow:  0 0 0 5px orangered;
+    }
+    .nohover{
+        pointer-events: none;
     }
 }
 @media only screen and (max-width:800px){
@@ -245,13 +309,27 @@ ul li a:hover{
         width: 35vw;
         margin-right: 30vw;
     }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .text{
+        font-size: 2.0rem;
+    }
 }
 @media only screen and (max-width:660px){
     .logo img{
         margin-right: 23vw;
     }
     .btn{
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        border: 2px solid gold;
+        box-shadow: 0 0 0 4px orangered;
+    }
+    .text{
+        font-size: 1.80rem;
+    }
+    .textcenter{
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width:550px){
@@ -262,12 +340,19 @@ ul li a:hover{
     .footer{
         font-size: 1.0rem;
     }
-    .buttons{
-        font-size: 1rem;
-        margin: 50px 25px;
-    }
     .navtext{
         font-size: 2.7rem;
+    }
+    .btn{
+        font-size: 1.3rem;
+        padding: 10px;
+        margin: auto 25px;
+    }
+    .text{
+        font-size: 1.6rem;
+    }
+    .buttons{
+        margin-top: 150px;
     }
 }
 @media only screen and (max-width:520px){
@@ -279,6 +364,15 @@ ul li a:hover{
     }
     .navtext{
         font-size: 2.5rem;
+    }
+    .btn{
+        margin: auto 20px;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .buttons{
+        margin-top: 130px;
     }
 }
 @media only screen and (max-width:490px){
@@ -296,16 +390,22 @@ ul li a:hover{
   .boldtext{
     margin: 20px;
   }
-  .buttons{
-    margin: 40px 20px;
-    margin-left: -25px;
-  }
   .btn{
-    font-size: 0.9rem;
+    font-size: 1.25rem;
+    margin: auto 19px;
   }
   .navtext{
     font-size: 2.3rem;
   }
+  .text{
+    font-size: 1.38rem;
+}
+.textcenter{
+    font-size: 1.65rem;
+}
+.buttons{
+    margin-top: 150px;
+}
 }
 @media only screen and (max-width:430px){
     .branch{
@@ -320,6 +420,9 @@ ul li a:hover{
    .navtext{
     font-size: 2.1rem;
    }
+   .btn{
+    margin: auto 14px;
+  }
 }
 
 
@@ -332,15 +435,24 @@ ul li a:hover{
     width: 50vw;
    }
    .text{
-    font-size: 20px;
+    font-size: 1.23rem;
    }
    .btn{
-    font-size:0.8rem;
+    font-size:0.95rem;
    }
    .navtext{
     font-size: 1.6rem;
     margin-right: 30px;
    }
+   .textcenter{
+    font-size: 1.5rem;
+   }
+   .buttons{
+    margin-bottom: 200px;
+   }
+   .btn{
+    margin: auto 12px;
+  }
 }
 @media only screen and (max-width:300px){
     .line{
@@ -349,7 +461,18 @@ ul li a:hover{
     }
     .branch{
         font-size: 1.05rem;
-       }
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+    .btn{
+        margin: auto 8px;
+        box-shadow: 0 0 0 2px orangered;
+        border: 1px solid gold;
+      }
+      .text{
+        font-size: 1.2rem;
+      }
 }
 
 
