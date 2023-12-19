@@ -41,6 +41,7 @@
 } */
 .text{
   font-size: 3.0rem;
+  margin: 10px;
   text-align: center;
   background: linear-gradient(90deg,orangered,orange);
   background-size: 400%;
@@ -156,9 +157,9 @@ ul li a:hover{
 }
 .contact{
     background-color: #3e4c21;
-    height: 20vh;
     text-align: center;
     box-shadow: 0 0 25px #ffff00;
+    margin-bottom: 3px;
 }
 .textcenter{
     color: whitesmoke;
@@ -214,6 +215,9 @@ ul li a:hover{
     }
     .text{
         font-size: 2.5rem;
+    }
+    .buttons{
+        margin-bottom: 202px;
     }
 }
 @media only screen and (max-width:1390px){
@@ -291,6 +295,9 @@ ul li a:hover{
       .text{
         font-size: 2.2rem;
     }
+    .buttons{
+        margin-bottom: 217px;
+    }
 }
 @media only screen and (max-width:890px){
     .branch{
@@ -304,6 +311,9 @@ ul li a:hover{
     }
     .nohover{
         pointer-events: none;
+    }
+    .textvenue{
+        font-size: 2.0rem;
     }
 }
 @media only screen and (max-width:800px){
@@ -357,6 +367,9 @@ ul li a:hover{
     .buttons{
         margin-top: 150px;
     }
+    .textvenue{
+        font-size: 1.55rem;
+    }
 }
 @media only screen and (max-width:520px){
     .logo img{
@@ -376,6 +389,7 @@ ul li a:hover{
     }
     .buttons{
         margin-top: 130px;
+        margin-bottom: 272px;
     }
 }
 @media only screen and (max-width:490px){
@@ -408,6 +422,7 @@ ul li a:hover{
 }
 .buttons{
     margin-top: 150px;
+    margin-bottom: 280px;
 }
 .textvenue{
     font-size: 1.35rem;
@@ -457,9 +472,6 @@ ul li a:hover{
    .textcenter{
     font-size: 1.48rem;
    }
-   .buttons{
-    margin-bottom: 200px;
-   }
    .btn{
     margin: auto 12px;
   }
@@ -495,5 +507,3 @@ ul li a:hover{
         font-size: 1.0rem;
       }
 }
-
-
