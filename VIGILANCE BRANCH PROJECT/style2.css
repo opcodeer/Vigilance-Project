@@ -40,7 +40,17 @@
   width: 7vw;
   padding: 10px;
   margin: 30px;
+  overflow: hidden;
   position: relative;
+}
+.imgbox img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .info{
   padding: 25px;
@@ -109,6 +119,9 @@
     .info{
         font-size: 1.4rem;
     }
+    .imgbox{
+        width: 9vw;
+    }
 }
 /* from 1190px hamburger on */
 @media only screen and (max-width:1190px){
@@ -145,6 +158,9 @@
     height: 14vh;
     width: 11vw;
    } */
+   .imgbox{
+    width: 11vw;
+   }
 }
 @media only screen and (max-width:890px){
     .branch{
@@ -208,6 +224,10 @@
     .navbar1{
        padding-left: 1rem;
     }
+    .imgbox{
+        width: 19vw;
+        height: 12vh;
+    }
 }
 @media only screen and (max-width:490px){
     .branch{
@@ -219,9 +239,6 @@
    .logo img {
     height: 5vh;
     width: 43vw;
-  }
-  .imgbox{
-    height: 9vh;
   }
   .info{
     padding: 17px;
@@ -239,9 +256,6 @@
     }
     ul li{
         padding: 5px 0px;
-    }
-    .imgbox{
-        height: 7vh;
     }
     .info{
         padding: 14px;
@@ -267,6 +281,10 @@
    }
    .logo img{
     margin-right: 7vw;
+   }
+   .imgbox{
+    width: 25vw;
+    height: 13vh;
    }
 }
 @media only screen and (max-width:350px){
