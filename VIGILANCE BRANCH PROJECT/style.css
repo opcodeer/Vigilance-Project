@@ -105,7 +105,6 @@ ul li a:hover{
     display: flex;
     justify-content: space-evenly;
     margin-top: 180px;
-    margin-bottom: 180px;
     background: orange;
     box-shadow: 0 0 25px black;
 }
@@ -216,9 +215,6 @@ ul li a:hover{
     .text{
         font-size: 2.5rem;
     }
-    .buttons{
-        margin-bottom: 202px;
-    }
 }
 @media only screen and (max-width:1390px){
     ul li{
@@ -295,9 +291,6 @@ ul li a:hover{
       .text{
         font-size: 2.2rem;
     }
-    .buttons{
-        margin-bottom: 217px;
-    }
 }
 @media only screen and (max-width:890px){
     .branch{
@@ -364,9 +357,6 @@ ul li a:hover{
     .text{
         font-size: 1.6rem;
     }
-    .buttons{
-        margin-top: 150px;
-    }
     .textvenue{
         font-size: 1.55rem;
     }
@@ -386,10 +376,6 @@ ul li a:hover{
     }
     .text{
         font-size: 1.5rem;
-    }
-    .buttons{
-        margin-top: 130px;
-        margin-bottom: 272px;
     }
 }
 @media only screen and (max-width:490px){
@@ -420,13 +406,12 @@ ul li a:hover{
 .textcenter{
     font-size: 1.65rem;
 }
-.buttons{
-    margin-top: 150px;
-    margin-bottom: 280px;
-}
 .textvenue{
     font-size: 1.35rem;
     font-family: kalnia;
+}
+.buttons{
+    margin-top: 130px;
 }
 }
 @media only screen and (max-width:430px){
