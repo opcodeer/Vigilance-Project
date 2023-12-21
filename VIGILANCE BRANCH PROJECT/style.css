@@ -41,13 +41,14 @@
 } */
 .text{
   font-size: 2.8rem;
-  text-align: center;
+  text-align: justify;
   background: linear-gradient(90deg,orangered,orange);
   background-size: 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
    background-clip: text;
   animation: animate 10s linear infinite;
+  margin: 10px;
 }
 .text a{
     cursor: auto;
