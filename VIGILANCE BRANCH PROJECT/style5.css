@@ -44,19 +44,25 @@
     margin-left: 50px;
     color: white;
   }
-  .text-big a:hover{
+.text-big a:hover{
       color: darkblue;
       text-decoration: revert;
   }
-  .text-small{
+.text-small{
     font-size: 2rem;
   }
+.text{
+    font-size: 20px;
+}
 .container{
     min-height: 100vh;
 }
 .img{
     width: 30px;
     margin-left: 10px;
+}
+.date{
+    font-size: 20px;
 }
 .footer{
     width: 100%;
@@ -132,6 +138,9 @@
     .text-big a{
         margin-left: 25px;
     }
+    .text{
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:520px){
     .logo img{
@@ -142,6 +151,9 @@
     }
     .table-main{
         margin: 70px;
+    }
+    .text{
+        font-size: 14px;
     }
 }
 @media only screen and (max-width:490px){
@@ -171,6 +183,12 @@
     ul li{
         padding: 5px 0px;
     }
+    .headrow{
+        font-size: 13px;
+    }
+    .date{
+        font-size: 15px;
+    }
 }
 
 
@@ -185,6 +203,16 @@
     font-size: 1.2rem;
     margin-left: 10px;
    }
+   .headrow{
+    font-size: 12px;
+   }
+   .date{
+    font-size: 12px;
+   }
+   .text{
+    font-size: 11px;
+    font-weight: bold;
+   }
 }
 @media only screen and (max-width:300px){
     .logo img{
@@ -192,5 +220,11 @@
     }
     .text-big a{
         margin-left: -13px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .date{
+        font-size: 10px;
     }
 }
