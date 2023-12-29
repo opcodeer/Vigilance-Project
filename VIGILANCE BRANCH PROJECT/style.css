@@ -36,9 +36,6 @@
    background-clip: text;
   animation: animate 10s linear infinite;
 }
-/* .content{
-    background-color: black;
-} */
 .text{
   font-size: 2.8rem;
   text-align: justify;
@@ -191,20 +188,6 @@ ul li a:hover{
         background-position: 400%;
     }
 }
-/* @keyframes blink{
-    0%{
-        opacity: 1;
-        background-color: black;
-    }
-    50%{
-        opacity: 0;
-        background-color: #696909;
-    }
-    100%{
-        opacity: 1;
-        background-color: darkblue;
-    }
-} */
 @media only screen and (max-width:1695px){
     .branch{
          font-size: 2.7rem;
